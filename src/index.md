@@ -2,7 +2,13 @@
 toc: false
 ---
 
-<div class="hero">
+# Hello World!
+
+Welcome to the show.
+
+## Header 2
+
+<!-- <div class="hero">
   <h1>Framework</h1>
   <h2>Welcome to your new app! Edit&nbsp;<code style="font-size: 90%;">src/index.md</code> to change this page.</h2>
   <a href="https://observablehq.com/framework/getting-started">Get started<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a>
@@ -65,11 +71,11 @@ Here are some ideas of things you could try…
   <div class="card">
     Visit <a href="https://github.com/observablehq/framework">Framework on GitHub</a> and give us a star. Or file an issue if you’ve found a bug!
   </div>
-</div>
+</div> -->
 
 <style>
 
-.hero {
+/* .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,6 +112,6 @@ Here are some ideas of things you could try…
   .hero h1 {
     font-size: 90px;
   }
-}
+} */
 
 </style>
