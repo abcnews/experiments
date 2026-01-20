@@ -29,7 +29,10 @@ export default {
   header: `<div style='width: 100%; text-align: right'><a href='https://www.abc.net.au'>${worm()}</a></div>`, // what to show in the header (HTML)
   // footer: "Built with Observable.", // what to show in the footer (HTML)
   // sidebar: true, // whether to show the sidebar
-  // toc: true, // whether to show the table of contents
+  toc: {
+    show: true,
+    label: "On this page",
+  }, // whether to show the table of contents
   // pager: true, // whether to show previous & next links in the footer
   // output: "dist", // path to the output root for build
   search: true, // activate search
