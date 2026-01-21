@@ -11,11 +11,11 @@ theme: [air, near-midnight]
 ```js
 import { Chart } from "./chart.js"
 import { autoResize } from "../lib/iframeResizer.js"
+autoResize()
 ```
 
 ```js
-autoResize();
-display(await Chart())
+Chart()
 ```
 
 <style>
