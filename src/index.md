@@ -12,7 +12,7 @@ We're just getting started so check back later for more.
 
 ## A brief introduction
 
-We can do JavaScript imports:
+With Framework can do JavaScript imports:
 
 ```js echo
 import { Chart } from "./embeds/chart.js"
