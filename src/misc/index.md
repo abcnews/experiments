@@ -2,13 +2,17 @@
 title: Miscellaneous
 ---
 
-```js
+# Miscellaneous
+
+Here are just some miscellaneous experiments.
+
+## Confetti
+
+```js echo
 import confetti from "npm:canvas-confetti"
 ```
 
-# Miscellaneous
-
-A few other things.
+We imported `canvas-confetti` from npm and we can use it to create confetti!
 
 ```js
 Inputs.button("Throw confetti! 🎉", { reduce: () => confetti() })
@@ -18,12 +22,13 @@ Inputs.button("Throw confetti! 🎉", { reduce: () => confetti() })
 
 ## Other experiments
 
-Let's import a custom element
+Let's import a few custom elements we made in Svelte.
 
 ```js echo
-import "../lib/my-library.js"
+import "../lib/sample-web-components.js"
 ```
 
 ```html echo
-<my-element name="Joshua"></my-element>
+<my-element name="whoever you are"></my-element>
+<my-counter></my-counter>
 ```
