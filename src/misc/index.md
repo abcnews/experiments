@@ -3,7 +3,7 @@ title: Miscellaneous
 ---
 
 ```js
-import confetti from "npm:canvas-confetti";
+import confetti from "npm:canvas-confetti"
 ```
 
 # Miscellaneous
@@ -11,5 +11,19 @@ import confetti from "npm:canvas-confetti";
 A few other things.
 
 ```js
-Inputs.button("Throw confetti! 🎉", {reduce: () => confetti()})
+Inputs.button("Throw confetti! 🎉", { reduce: () => confetti() })
+```
+
+---
+
+## Other experiments
+
+Let's import a custom element
+
+```js echo
+import "../lib/my-library.js"
+```
+
+```html echo
+<my-element name="Joshua"></my-element>
 ```
