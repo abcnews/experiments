@@ -7,14 +7,17 @@ export default {
   // all pages will be listed in alphabetical order. Listing pages explicitly
   // lets you organize them into sections and have unlisted pages.
   pages: [
-    {name: "Home", path: "/"},
-    {name: "Miscellaneous", path: "/misc/"},
+    { name: "Home", path: "/" },
+    // {name: "Miscellaneous", path: "/misc/"},
     // {name: "Welcome", path: "/welcome"},
-    // {
-    //   name: "Miscellaneous",
-    //   open: false,
-    //   pages: [{ name: "Misc", path: "/misc/" }],
-    // },
+    {
+      name: "Unsorted",
+      open: false,
+      pages: [
+        { name: "Miscellaneous", path: "/misc/" },
+        { name: "ArchiML", path: "/misc/archieml/" },
+      ],
+    },
     // { name: "Info & Credits", path: "/info/" },
   ],
 
