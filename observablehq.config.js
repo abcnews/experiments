@@ -24,7 +24,7 @@ export default {
   root: "src",
 
   // Some additional configuration options and their defaults:
-  theme: ["glacier", "sun-faded"], // try "light", "dark", "slate", etc.
+  theme: ["glacier", "sun-faded"], // Overwritten by style custom css
   header: `<div style='width: 100%; text-align: right'><a href='https://www.abc.net.au'>${worm()}</a></div>`, // what to show in the header (HTML)
   // footer: "Built with Observable.", // what to show in the footer (HTML)
   // sidebar: true, // whether to show the sidebar
