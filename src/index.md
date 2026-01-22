@@ -34,8 +34,12 @@ Afterwards we can call those functions:
 greeting("World")
 ```
 
-We can output that chart we imported up top:
+And finally we can display chart we imported up top:
 
 ```js echo
 Chart()
 ```
+
+---
+
+Consult the [Framework docs](https://observablehq.com/framework/getting-started) for more info.
