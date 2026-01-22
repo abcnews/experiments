@@ -44,7 +44,7 @@ export default {
   home: `<span style="display: flex; align-items: center; font-weight: 500; gap: 0.5rem; margin-left: -0.5rem; color: var(--theme-foreground);">
     ${logo()} Dev Experiments
   </span>`,
-  dynamicPaths: ["/embeds/chart.js"],
+  // dynamicPaths: ["/embeds/chart.js"],
 }
 
 function logo() {

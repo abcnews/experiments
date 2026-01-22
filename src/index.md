@@ -15,20 +15,18 @@ We're just getting started so check back later for more.
 With Framework can do JavaScript imports:
 
 ```js echo
-import { Chart } from "./embeds/chart.js"
+import { Chart } from "./components/sampleChart.js"
 ```
 
-Here we are displaying TypeScript code (and running it):
+Here we are displaying TypeScript code (and running it to define a function):
 
 ```ts echo
-const x: string = () => "Hello World"
-
-function greeting(name) {
+function greeting(name): string {
   return html`Hello, <i>${name}</i>!`
 }
 ```
 
-Afterwards we can call those functions:
+Afterwards we can call the function:
 
 ```js echo
 greeting("World")

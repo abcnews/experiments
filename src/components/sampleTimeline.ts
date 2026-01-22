@@ -3,8 +3,8 @@ import * as Plot from "npm:@observablehq/plot"
 export function timeline(
   events,
   { width, height }: { width: number; height: number } = {
-    width: 640,
-    height: 480,
+    width: null,
+    height: null,
   },
 ) {
   return Plot.plot({

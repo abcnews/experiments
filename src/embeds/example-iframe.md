@@ -9,7 +9,7 @@ theme: [air, near-midnight]
 ---
 
 ```js
-import { Chart } from "./chart.js"
+import { Chart } from "../components/sampleChart.js"
 import { autoResize } from "../lib/iframeResizer.js"
 autoResize()
 ```
