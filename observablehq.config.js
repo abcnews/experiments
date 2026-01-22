@@ -12,9 +12,7 @@ export default {
     {
       name: "Miscellaneous",
       open: false,
-      pages: [
-        {name: "Misc", path: "/misc/"},
-      ]
+      pages: [{ name: "Misc", path: "/misc/" }],
     },
     { name: "Info & Credits", path: "/info/" },
   ],
@@ -41,7 +39,7 @@ export default {
   typographer: true, // smart quotes and other typographic improvements
   // preserveExtension: false, // drop .html from URLs
   // preserveIndex: false, // drop /index from URLs
-  // style: "custom-style.css"
+  style: "styles/custom.css",
 
   home: `<span style="display: flex; align-items: center; font-weight: 500; gap: 0.5rem; margin-left: -0.5rem; color: var(--theme-foreground);">
     ${logo()} Dev Experiments

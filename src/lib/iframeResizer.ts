@@ -3,7 +3,7 @@
  * @param height
  * @returns void
  */
-export const emitResize = (height: number) => {
+const emitResize = (height: number) => {
   if (!window.parent) {
     return;
   }
@@ -16,7 +16,7 @@ export const emitResize = (height: number) => {
   window.parent.postMessage(payload, "*");
 };
 
-export const autoResize = () => {
+const autoResize = () => {
   const observer = new ResizeObserver(() => {
     const height = document.body.scrollHeight;
     emitResize(height);
@@ -24,3 +24,5 @@ export const autoResize = () => {
 
   observer.observe(document.body);
 };
+
+export { autoResize, emitResize };
