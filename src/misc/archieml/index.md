@@ -27,34 +27,37 @@ Let's try formatting the JSON:
 html`<pre>${JSON.stringify(data, null, 2)}</pre>`
 ```
 
-And we can process any Markdown here:
+---
 
-```js echo
+## Markdown processing
+
+We can then process any Markdown:
+
+```ts
 import rehypeSanitize from "rehype-sanitize"
 import rehypeStringify from "rehype-stringify"
 import remarkParse from "remark-parse"
 import remarkRehype from "remark-rehype"
-import { unified } from "https://esm.sh/unified@11"
+import { unified } from "https://esm.sh/unified@11?bundle"
 
-const file = await unified()
-  .use(remarkParse)
-  .use(remarkRehype)
-  .use(rehypeSanitize)
-  .use(rehypeStringify)
-  .process(data.INTRO)
+const parseMarkdown = async (markdown: string) => {
+  const file = await unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypeSanitize)
+    .use(rehypeStringify)
+    .process(markdown)
 
-const wrapper = document.createElement("div")
-wrapper.classList.add("card")
-wrapper.innerHTML = file.value
-display(wrapper)
+  return file
+}
 ```
 
----
-
-## Templating & Markdown processing
-
-Let's process the JSON data a bit:
-
 ```js echo
-html` <div class="card">${data.INTRO}</div>`
+const markup = await parseMarkdown(data.INTRO)
+const wrapper = document.createElement("div")
+
+wrapper.classList.add("card")
+wrapper.innerHTML = markup.value
+
+display(wrapper)
 ```

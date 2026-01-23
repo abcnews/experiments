@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "module": "es2022",
-    "moduleResolution": "node",
-    "target": "es2017"
+    // "module": "es2022",
+    // "moduleResolution": "node",
+    // "target": "es2017"
   },
   "include": [
     "src/**/*"
