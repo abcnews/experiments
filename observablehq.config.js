@@ -16,6 +16,7 @@ export default {
       pages: [
         { name: "Miscellaneous", path: "/misc/" },
         { name: "ArchiML", path: "/misc/archieml/" },
+        { name: "Three.js", path: "/misc/threejs/" },
       ],
     },
     // { name: "Info & Credits", path: "/info/" },
