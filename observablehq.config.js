@@ -8,8 +8,6 @@ export default {
   // lets you organize them into sections and have unlisted pages.
   pages: [
     { name: "Home", path: "/" },
-    // {name: "Miscellaneous", path: "/misc/"},
-    // {name: "Welcome", path: "/welcome"},
     {
       name: "Unsorted",
       open: false,
@@ -54,7 +52,7 @@ export default {
   home: `<span style="display: flex; align-items: center; font-weight: 500; gap: 0.5rem; margin-left: -0.5rem; color: var(--theme-foreground);">
     ${logo()} Dev Experiments
   </span>`,
-  dynamicPaths: ["/components/sampleChart.js"],
+  dynamicPaths: ["/embeds/example-chart.js"],
 }
 
 function logo() {
