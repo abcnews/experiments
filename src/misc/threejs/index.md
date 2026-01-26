@@ -2,7 +2,7 @@
 
 An experiment with [Three.js](https://threejs.org/) on the web.
 
-```js
+```js echo
 import * as THREE from "three"
 
 const aspectRatio = 4 / 3
@@ -31,22 +31,4 @@ renderer.setAnimationLoop(animate)
 display(renderer.domElement)
 ```
 
-```js echo
-const node = document.createElement("SPAN")
-const root = ReactDOM.createRoot(renderer.domElement)
-```
-
-```jsx echo
-root.render(
-  <>
-    Hello, <i>"anonymous"</i>!
-  </>,
-)
-```
-
-
-<div class="card">
-  <h2>Rendering into an inline expression</h2>
-  ${node}
-</div>
 

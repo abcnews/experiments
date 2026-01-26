@@ -9,7 +9,7 @@ export async function Chart() {
     Plot.plot({
       width,
       y: { grid: true },
-      color: { scheme: "burd" },
+      color: { scheme: "BuRd" },
       marks: [
         Plot.dot(gistemp, { x: "Date", y: "Anomaly", stroke: "Anomaly" }),
         Plot.ruleY([0]),
